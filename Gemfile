@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'high_voltage', '~> 2.4.0'
 
+gem 'sitemap_generator'
+
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
 source 'https://rails-assets.org' do
