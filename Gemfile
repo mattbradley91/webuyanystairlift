@@ -25,9 +25,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'high_voltage', '~> 2.4.0'
 
+gem 'devise'
+
 gem 'sitemap_generator'
 
 gem 'bootstrap', '~> 4.0.0.alpha3'
+
+gem 'mail_form'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
