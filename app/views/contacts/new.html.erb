@@ -1,0 +1,31 @@
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-md-6">
+			<h1>Contact Us</h1>
+			<p>If you would like to find out more about a <strong>FREE</strong> stairlift removal, and to see how much you could cashback you could receive for your stairlift, enquire via the form below, or call us on <%= tel_to "01484 363845" %>.</p> 
+			<p>You can also email us at <%= mail_to "info@webuyanystairlift.org.uk" %> for any other enquiries you may have.</p>
+
+			<%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+				<%= f.select :title, ['Mr', 'Ms', 'Miss', 'Dr']%>
+				<%= f.input :first_name, :required => true %>
+				<%= f.input :last_name, :required => true %>
+				<%= f.input :email, :required => true %>
+				<%= f.label :attachment %>
+				<%= f.file_field :file %>
+				<div class= "hidden">
+			  		<%= f.input :nickname, :hint => 'Leave this field blank!' %>
+				</div>
+				<div>
+			  	</br>
+			  	<%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+				</div>
+			<% end %>
+		</div>
+
+		<div class="col-md-6">
+			<h1>Leave Us Feedback</h1>
+		</div>
+
+	</div>
