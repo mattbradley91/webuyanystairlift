@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
     if @contact.deliver
       redirect_to '/contact-thankyou'
     else
-      redirect_to '/contact-us'
+      render :new
     end
   end
 end

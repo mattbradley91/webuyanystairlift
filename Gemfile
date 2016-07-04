@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -34,6 +34,8 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'mail_form'
 
 gem 'simple_form'
+
+gem 'better_errors'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
