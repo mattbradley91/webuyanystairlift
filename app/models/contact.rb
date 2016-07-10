@@ -12,6 +12,7 @@ class Contact < MailForm::Base
   # Stairlift Information
   attribute :condition, validate: true
   attribute :age, validate: true
+  attribute :make, validate: true
   attribute :file,      attachment: true
   attribute :nickname,  captcha:  true
 

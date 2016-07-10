@@ -4,6 +4,7 @@
 
 		<div class="col-md-8">
 			<h2>Contact Us</h2>
+			<hr class="mfifteen">
 			<p>If you would like to find out more about a <strong>FREE</strong> stairlift removal, and to see how much you could cashback you could receive for your stairlift, enquire via the form below, or call us on <%= tel_to "01484 363845" %>.</p>
 			<p>You can also email us at <%= mail_to "info@webuyanystairlift.org.uk" %> for any other enquiries you may have.</p>
 
@@ -29,6 +30,8 @@
 						<%= f.select :condition, ['Fitted From New', 'Reconditioned', 'Not Working'] %> <br>
 						<%= f.label :age, "Age:" %>
 						<%= f.select :age, ['Less than 1 year', '1 year', '2 years', '3 years', '4 years', '5 years', '6 or more years'] %> <br>
+						<%= f.label :make, "Make:" %>
+						<%= f.select :make, ['Dont Know', 'Minivator', 'Stannah', 'Acorn', 'Brooks', 'ThyssenKrupp'] %> <br>
 						<%= f.label :attachment, "Image Attachment:" %> <br>
 						<%= f.file_field :file %>
 						<div class= "hidden">
@@ -45,6 +48,8 @@
 
 		<div class="col-md-4">
 			<h2>Leave Us Feedback</h2>
+			<hr class="mfifteen">
+			<p>If you would like to leave us feedback, please fill out the form below. Any feedback is welcome to improve our service.</p>
 
 			<%= simple_form_for Feedback.new, :html => {:class => 'form-horizontal' } do |f| %>
 				<%= f.label :title, "Title:" %>
