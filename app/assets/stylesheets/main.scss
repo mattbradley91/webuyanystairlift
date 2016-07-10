@@ -108,6 +108,17 @@ abbr {
     display: none;
 }
 
+label {
+    font-weight: normal;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#feedback_message {
+    width: 100%;
+    min-height: 70px;
+}
+
 /*flash*/
 
 .alert-error {
