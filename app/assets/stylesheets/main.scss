@@ -98,10 +98,17 @@ h5 {
     margin-right: 2px;
 }
 
+#contact_email, #contact_telephone, #feedback_email {
+    @media screen and (max-width: 360px) {
+        width: 140px;
+    }
+
+}
+
 /*Form Error Styling*/
 
-.hidden { 
-    display: none; 
+.hidden {
+    display: none;
 }
 
 abbr {
