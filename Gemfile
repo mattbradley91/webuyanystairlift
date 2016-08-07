@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
-
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+
+gem 'puma'
 
 gem 'pg'
 # Use Uglifier as compressor for JavaScript assets
@@ -25,7 +27,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'high_voltage', '~> 2.4.0'
 
+gem 'devise'
+
+gem 'sitemap_generator'
+
 gem 'bootstrap', '~> 4.0.0.alpha3'
+
+gem 'mail_form'
+
+gem 'simple_form'
+
+gem 'better_errors'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'

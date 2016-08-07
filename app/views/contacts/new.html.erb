@@ -1,0 +1,79 @@
+<% provide(:title, 'We Buy Any Stairlift | Contact Us') %>
+<% provide(:description, 'If you would like to find out more about a FREE stairlift removal, and to see how much you could cashback you could receive for your stairlift, enquire via the form below, or call us on 0800 177 7266 (Free from mobile phones).') %>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-md-8">
+			<h2>Contact Us</h2>
+			<hr class="mfifteen">
+			<p>If you would like to find out more about a <strong>FREE</strong> stairlift removal, and to see how much you could cashback you could receive for your stairlift, enquire via the form below, or call us on <%= tel_to "0800 177 7266" %> (Free from mobile phones).</p>
+			<p>You can also email us at <%= mail_to "info@webuyanystairlift.org.uk" %> for any other enquiries you may have.</p>
+
+			<div class="row">
+
+				<div class="col-sm-6">
+
+					<%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+						<h4>About You</h4>
+						<%= f.label :title, "Title:" %>
+						<%= f.select :title, ['Mr', 'Ms', 'Miss', 'Dr'] %>
+						<%= f.input :first_name, required: true, label: "First Name:" %>
+						<%= f.input :last_name, required: true, label: "Last Name:" %>
+						<%= f.input :email, label: "Email (If applicable):" %>
+						<%= f.input :town, required: true, label: "Town/City:" %>
+						<%= f.input :postcode, required: true, label: "Postcode:" %>
+						<%= f.input :telephone, required: true, label: "Telephone Number:" %>
+				</div>
+
+				<div class="col-sm-6">
+						<h4>Stairlift Information</h4>
+						<%= f.label :condition, "Condition:" %>
+						<%= f.select :condition, ['Fitted From New', 'Reconditioned', 'Not Working'] %> <br>
+						<%= f.label :age, "Age:" %>
+						<%= f.select :age, ['Less than 1 year', '1 year', '2 years', '3 years', '4 years', '5 years', '6 or more years'] %> <br>
+						<%= f.label :make, "Make:" %>
+						<%= f.select :make, ['Dont Know', 'Minivator', 'Stannah', 'Acorn', 'Brooks', 'ThyssenKrupp'] %> <br>
+						<%= f.label :attachment, "Image Attachment:" %> <br>
+						<%= f.file_field :file %>
+						<div class= "hidden">
+					  		<%= f.input :nickname, :hint => 'Leave this field blank!' %>
+						</div>
+						<div>
+					  	</br>
+					  	<%= f.button :submit, 'Send Enquiry', :class=> "btn btn-primary" %>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<h2>Leave Us Feedback</h2>
+			<hr class="mfifteen">
+			<p>If you would like to leave us feedback, please fill out the form below. Any feedback is welcome to improve our service.</p>
+
+			<%= simple_form_for Feedback.new, :html => {:class => 'form-horizontal' } do |f| %>
+				<%= f.label :title, "Title:" %>
+				<%= f.select :title, ['Mr', 'Ms', 'Miss', 'Dr'] %>
+				<%= f.input :first_name, required: true, label: "First Name:" %>
+				<%= f.input :last_name, required: true, label: "Last Name:" %>
+				<%= f.input :email, label: "Email (If applicable):" %>
+				<%= f.input :town, required: true, label: "Town/City:" %>
+				<%= f.input :postcode, label: "Postcode:" %>
+				<%= f.label :message, "Feedback Message:" %> <br>
+				<%= f.text_area :message %>
+				<%= f.label :rating, "Service Rating:" %>
+				<%= f.select :rating, ['Excellent', 'Very Good', 'Good', 'Fair', 'Poor'] %>
+				<div class= "hidden">
+			  		<%= f.input :nickname, :hint => 'Leave this field blank!' %>
+				</div>
+				<div>
+			  	</br>
+			  	<%= f.button :submit, 'Send Feedback', :class=> "btn btn-primary" %>
+				</div>
+			<% end %>
+		</div>
+
+	</div>

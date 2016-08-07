@@ -1,0 +1,145 @@
+<% provide(:title, 'We Buy Any Stairlift | Home') %>
+
+<div class="container">
+
+    <!-- Heading Row -->
+    <div class="row">
+        <div class="col-md-8">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <%= image_tag 'stairlift_main.jpg', class: 'img-responsive', alt: 'Stairlift Main' %>
+                        <!-- <div class="carousel-caption">
+                            <h3>Caption Text</h3>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <%= image_tag 'stairlift_2.png', class: 'img-responsive', alt: 'Stairlift 2' %>
+                        <!-- <div class="carousel-caption">
+                            <h3>Caption Text</h3>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <%= image_tag 'stairlift_3.png', class: 'img-responsive', alt: 'Stairlift 3' %>
+                        <!-- <div class="carousel-caption">
+                            <h3>Caption Text</h3>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <%= image_tag 'stairlift_4.png', class: 'img-responsive', alt: 'Stairlift 4' %>
+                        <!-- <div class="carousel-caption">
+                            <h3>Caption Text</h3>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <%= image_tag 'stairlift_5.png', class: 'img-responsive', alt: 'Stairlift 5' %>
+                        <!-- <div class="carousel-caption">
+                            <h3>Caption Text</h3>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div> <!-- Carousel -->
+        </div>
+        <!-- /.col-md-8 -->
+        <div class="col-md-4">
+            <h1>We Buy Any Stairlift</h1>
+            <p>Welcome to We Buy Any Stairlift.</p>
+            <p>Have your stairlift professionally removed <strong>quickly</strong> and <strong>efficiently</strong>.</p>
+            <%= link_to 'Enquire Now!', '/contact-us', class: 'btn btn-primary btn-lg' %>
+        </div>
+        <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+
+        <div class="col-lg-12 mtop">
+            <p>At <strong>We Buy Any Stairlift</strong> we pride ourselves on professional, quick and efficient stairlift removals. We know that its important to our customers that their stairlift is removed safely without any risk of damage to their home. That’s why we offer a free removal service by a fully qualified (NVQ Level 2) lift engineers. They are also DBS checked and pay you the fairest price for your used stairlift.</p>
+            <p>We cover the whole of the UK (excluding Scotland), meaning whatever the location our customers have access to our free removal service.</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Call to Action Well -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="well text-center">
+                If you have any enquiries email us at <span class="large-contact"><%= mail_to "info@webuyanystairlift.org.uk" %></span>. <br>
+                Or alternatively ring <br class="display-mob"><span class="large-contact"><%= tel_to "0800 177 7266" %></span> (Free from mobile phones). Leave a Message and we’ll get back to you within 24 hours.
+            </div>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <div class="text-center">
+                <h1 class="mtop-none">Latest Feedback</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>Mrs Bower, Leeds</h4>
+            <p>I was very happy with the service. Very fast, no fuss and paid before they even removed it. Would highly recommend.</p>
+            <div class="rating mobile-mbottom">
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star', alt: 'star rating' %>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-sm-4">
+            <h4>Mr Thompson, Bristol</h4>
+            <p>Thank you for your work, great price for the lift when other companies were going to charge me! Very good service.</p>
+            <div class="rating mobile-mbottom">
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-sm-4">
+            <h4>Mr Joe Wilkinson, Cardiff</h4>
+            <p>Agreed a time for the stairlift to be removed. Turned up on time, paid cash before removal. Took the engineer 30 minutes to remove. Clean tidy job.</p>
+            <div class="rating">
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star mright', alt: 'star rating' %>
+                <%= image_tag 'star.png', class: 'img-responsive star', alt: 'star rating' %>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row
