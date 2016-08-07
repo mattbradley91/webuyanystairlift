@@ -21,7 +21,7 @@ class Contact < MailForm::Base
   def headers
     {
       :subject => "New Enquiry",
-      :to => "matthewbradley91@hotmail.co.uk",
+      :to => "info@webuyanystairlift.org.uk",
       :from => %("#{title} #{first_name} #{last_name}")
     }
   end
