@@ -14,7 +14,7 @@ class Feedback < MailForm::Base
   def headers
     {
       :subject => "Feedback Received",
-      :to => "matthewbradley91@hotmail.co.uk",
+      :to => "info@webuyanystairlift.org.uk",
       :from => %("#{title} #{first_name} #{last_name}")
     }
   end
