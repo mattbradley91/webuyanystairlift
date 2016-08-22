@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title><%= full_title(yield(:title)) %></title>
   <%= tag :meta, name: 'description', content: meta_description(yield(:description)) %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%= render 'shared/analytics' %>
@@ -19,4 +18,5 @@
 	<%= render 'shared/footer' %>
 
 </body>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true, async: true %>
 </html>
