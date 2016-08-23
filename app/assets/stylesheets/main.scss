@@ -176,3 +176,34 @@ label {
     color: #468847;
     text-align: left;
 }
+
+.social-share-button {
+    margin-bottom: 10px;
+}
+
+.social-share-button-facebook {
+    width: 40px !important;
+    height: 40px !important;
+    background: url("social/Facebook.svg") no-repeat !important;
+    margin-right: 5px;
+}
+
+.social-share-button-twitter {
+    width: 48px !important;
+    height: 40px !important;
+    background: url("social/Twitter.svg") no-repeat !important;
+    margin-right: 5px;
+}
+
+.social-share-button-google_plus {
+    width: 62.86px !important;
+    height: 40px !important;
+    background: url("social/GooglePlus.svg") no-repeat !important;
+    margin-right: 5px;
+}
+
+.social-share-button-email {
+    width: 60.19px !important;
+    height: 40px !important;
+    background: url("social/Email.svg") no-repeat !important;
+}

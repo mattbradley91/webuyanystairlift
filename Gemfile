@@ -39,6 +39,8 @@ gem 'simple_form'
 
 gem 'better_errors'
 
+gem 'social-share-button'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
