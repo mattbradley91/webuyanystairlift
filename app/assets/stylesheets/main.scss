@@ -206,4 +206,11 @@ label {
     width: 60.19px !important;
     height: 40px !important;
     background: url("social/Email.svg") no-repeat !important;
+
+.feedback-row {
+    margin-top: 40px;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 0;
+    }
 }
