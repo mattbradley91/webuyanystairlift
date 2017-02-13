@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   resources "feedbacks", only: [:new, :create]
 
   get '/contacts', to: redirect('/contact-us')
+
+  get 'about-us', controller: 'pages', action: 'show', id: 'about-us'
+  get 'selling-your-stairlift', controller: 'pages', action: 'show', id: 'selling-your-stairlift'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -62,4 +65,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get '*path' => redirect('/')
 end
