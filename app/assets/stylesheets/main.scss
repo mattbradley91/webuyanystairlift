@@ -214,3 +214,11 @@ margin-top: 40px;
         margin-top: 0;
     }
 }
+
+.skylink-address {
+    text-align: right;
+
+    @media screen and (max-width: 767px) {
+        text-align: left;
+    }
+}
