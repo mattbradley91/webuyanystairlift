@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  constraints subdomain: 'www' do
-    get ':any', to: redirect(subdomain: nil, path: '/%{any}'), any: /.*/
+  constraints(host: /(www\.)?webuyanystairlift\.org.uk) do
+    get '/', to: redirect('http://webuyanystairlift.org.uk')
   end
 
   devise_for :users
