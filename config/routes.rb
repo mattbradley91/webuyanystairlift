@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  constraints(host: www.webuyanystairlift.org.uk) do
-    get '/', to: redirect('http://webuyanystairlift.org.uk')
-  end
-
   devise_for :users
   get 'pages/home' => 'high_voltage/pages#show', id: 'home'
 
