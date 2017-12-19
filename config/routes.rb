@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  constraints(host: /(www\.)?webuyanystairlift\.org.uk) do
+  constraints(host: www.webuyanystairlift.org.uk) do
     get '/', to: redirect('http://webuyanystairlift.org.uk')
   end
 
