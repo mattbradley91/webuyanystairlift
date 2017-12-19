@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  constraints subdomain: 'www' do
+    get ':any', to: redirect(subdomain: nil, path: '/%{any}'), any: /.*/
+  end
+
   devise_for :users
   get 'pages/home' => 'high_voltage/pages#show', id: 'home'
 
