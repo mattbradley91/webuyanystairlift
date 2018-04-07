@@ -16,6 +16,12 @@ body {
     padding: 5px 15px;
 }
 
+.nav li a {
+    @media screen and (max-width: 991px) {
+        padding: 10px 11px;
+    }
+}
+
 footer {
     padding: 30px 0;
 }
@@ -47,6 +53,10 @@ body {
 
 .mtop {
     margin-top: 20px;
+}
+
+.mtop-ten {
+    margin-top: 10px;
 }
 
 .large-contact {
@@ -237,4 +247,19 @@ margin-top: 40px;
 
 .navbar-collapse {
     position: relative;
+}
+
+// Location Lists
+
+.location-lists {
+    ul {
+        padding-left: 0;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.full-width {
+    width: 100%;
 }

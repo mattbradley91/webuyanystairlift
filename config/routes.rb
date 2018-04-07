@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   get 'pages/home' => 'high_voltage/pages#show', id: 'home'
+  get '/*id' => 'high_voltage/pages#show', :constraints => { id: /areas-covered\/.*/ }
 
   match '/contact-us',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
 
   get 'about-us', controller: 'pages', action: 'show', id: 'about-us'
   get 'selling-your-stairlift', controller: 'pages', action: 'show', id: 'selling-your-stairlift'
+  get 'areas-covered', controller: 'pages', action: 'show', id: 'areas-covered'
   get 'contact-thankyou', controller: 'pages', action: 'show', id: 'contact-thankyou'
   get 'feedback-thankyou', controller: 'pages', action: 'show', id: 'feedback-thankyou'
   # The priority is based upon order of creation: first created -> highest priority.
